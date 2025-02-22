@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Save All Tab URLs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      margin: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .buttons {
+      margin-bottom: 10px;
+    }
+    .buttons button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .tab-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      overflow: hidden;
+    }
+    .tab-item img {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+    .tab-item a {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #000;
+      text-decoration: none;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <h2>Save All Tab URLs</h2>
+  <div class="buttons">
+    <button id="copyBtn">Copy URLs</button>
+    <button id="saveBtn">Save as HTML</button>
+  </div>
+  <div id="tabList"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
